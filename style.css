@@ -1,0 +1,91 @@
+/* 1. RESET - Clean slate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace; /* Hacker font */
+}
+
+/* 2. BACKGROUND - The Void */
+body {
+    background-color: #0d0d0d; /* Very dark grey, almost black */
+    color: #00ff41; /* Classic Matrix Green */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+}
+
+/* 3. THE CONTAINER - The Terminal Window */
+.terminal-container {
+    border: 2px solid #00ff41;
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.5); /* Neon Glow */
+    background-color: #000000;
+}
+
+/* 4. TEXT STYLING */
+h1 {
+    font-size: 18px;
+    border-bottom: 1px solid #00ff41;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #00ff41;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+/* 5. AVATAR BOX */
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #00ff41;
+    border-radius: 50%; /* Makes it a circle */
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+/* 6. BUTTONS - The Controls */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #0d0d0d;
+    background-color: #00ff41;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s; /* Smooth animation */
+}
+
+/* 7. HOVER EFFECT - Interactive feel */
+.btn:hover {
+    background-color: #0d0d0d;
+    color: #00ff41;
+    border: 1px solid #00ff41;
+    box-shadow: 0 0 15px #00ff41;
+    cursor: pointer;
+}
+/* BLINKING CURSOR ANIMATION */
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
