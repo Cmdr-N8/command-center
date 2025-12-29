@@ -6,14 +6,20 @@
     font-family: 'Courier New', Courier, monospace; /* Hacker font */
 }
 
-/* 2. BACKGROUND - The Void */
+/* 2. BACKGROUND - The Tactical Grid */
 body {
-    background-color: #0d0d0d; /* Very dark grey, almost black */
-    color: #00ff41; /* Classic Matrix Green */
+    background-color: #0d0d0d;
+    /* This creates a cool grid pattern */
+    background-image: 
+        linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 65, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px; /* Size of the grid squares */
+    
+    color: #00ff41;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full screen height */
+    height: 100vh;
 }
 
 /* 3. THE CONTAINER - The Terminal Window */
